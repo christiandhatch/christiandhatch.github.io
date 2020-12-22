@@ -1,9 +1,231 @@
-<html>
- 
-<body>
-  <h1>Christian Hatch</h1>
-  <p>Work in Progress</p>
-  <img src="https://content.codecademy.com/articles/github-pages-via-web-app/happy-ice-cream.gif" />
-</body>
- 
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>My custom Bulma website</title>
+    <link rel="stylesheet" href="css/mystyles.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="https://kit.fontawesome.com/3dcaedfb31.js" crossorigin="anonymous"></script>
+    <script src="menu.js"></script>
+  </head>
+  <body>
+    <nav class="navbar is-transparent" role="navigation" aria-label="main navigation">
+      <div class="container">
+        <div class="navbar-brand">
+          <a class="navbar-item" href="index.html">
+            <img src="assets/logo.png" alt="Christian Hatch" height="64">
+        </a>
+            <a class="navbar-burger" role="button" aria-label="menu" aria-expanded="false" data-target="navMenu">
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span></a>
+        </div>
+        <div class="navbar-menu" id="navMenu">
+          <div class="navbar-start"></div>
+          <div class="navbar-end">
+           <!-- <a class="navbar-item" href="#">Projects</a>-->
+            <div class="navbar-item">
+                <a class="button is-primary" href="#contact">Contact</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <section class="hero is-white has-text-centered">
+      <div class="hero-body">
+        <div class="container">
+          <div class="columns is-centered">
+            <div class="column">
+              <h1 class="title is-spaced is-size-1-desktop is-size-2-tablet is-size-3-mobile">Christian Hatch</h1>
+              <h2 class="subtitle is-size-4-desktop">Data Scientist and Full-stack Developer.</h2>
+              <img style="width: 210px; padding-top: 2rem;" src="assets/v1.png">
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="hero-foot">
+        <div class="container"><img class="is-bottom" src="assets/hero.svg"></div>
+      </div>
+    </section>
+    <section class="section is-medium has-background-primary has-text-centered is-long">
+      <div class="container">
+        <div class="columns is-centered">
+          <div class="column is-three-fifths">
+            <h1 class="title is-spaced is-size-3-desktop is-size-4-mobile has-text-white">Hi, I’m Christian. Nice to meet you.</h1>
+            <h2 class="subtitle is-size-5-desktop has-text-white">I have always had a passion for technology, which has led to me teaching myself multiple languages, tools, and techniques to be able to build cool stuff. My education and experience is in data science, and I have worked on analytics teams at some the top tech companies in the world, but my skills and interests go far beyond that. You can usually find me tinkering on some new idea, so feel free to reach out if you want to team up.</h2>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="section skills has-text-centered">
+      <div class="container is-narrow">
+        <div class="box">
+          <div class="content">
+            <div class="columns is-centered">
+              <div class="column col3">
+                <figure class="image"><img class="is-skill-icon mt-4" src="assets/bar-chart.svg" style="width:3rem"></figure>
+                <h1 class="title is-size-4 is-spaced">Data Scientist</h1>
+                <p>I have worked professionally in data science and analyics for the last five years, and have deep experience in data warehouses, visualization, statistical modeling, and machine learning.</p>
+                <p class="list-title has-text-primary has-text-weight-normal">Languages</p>
+                <p>SQL, R, Python</p>
+                <p class="list-title has-text-primary has-text-weight-normal">Technologies:</p>
+                <ul>
+                  <li>Snowflake, Redshift</li>
+                  <li>Looker, Tableau</li>
+                  <li>dbt</li>
+                  <li>Airflow</li>
+                  <li>R Shiny, ggplot2</li>
+                  <li>pandas, dplyr</li>
+                  <li>Git
+                  <li>Shell</li>
+                </ul>
+              </div>
+              <div class="column col">
+                <figure class="image is-vcentered">
+                  <img class="is-skill-icon is-vcentered mt-4" src="assets/web-programming.svg" style="width: 3rem;">
+                </figure>
+                <h1 class="title is-size-4 is-spaced">Front-end</h1>
+                <p>Self-taught coder who has a couple side projects going at any one time. I don't claim to be a designer, but still have a passion for creating simple, clean, beautiful UIs.</p>
+                <p class="list-title has-text-primary has-text-weight-normal">Languages:</p>
+                <p>JavaScript, HTML, CSS</p>
+                <p class="list-title has-text-primary has-text-weight-normal">Tools and Frameworks</p>
+                <ul>
+                  <li>React/Redux</li>
+                  <li>Typescript</li>
+                  <li>Mocha</li>
+                  <li>Gatsby</li>
+                  <li>Bulma</li>
+                  <li>Netlify</li>
+                  <li>VSCode</li>
+                  <li>Sketch</li>
+                </ul>
+              </div>
+              <div class="column col2"> 
+                <figure class="image"><img class="is-skill-icon mt-4" src="assets/servers.svg" style="width:3rem"></figure>
+                <h1 class="title is-size-4 is-spaced">Back-end</h1>
+                <p>My love and experience with Python led naturally to building more and more complex tools and services. I know how to build usable, performant APIs, both REST and GraphQL.</p>
+                <p class="list-title has-text-primary has-text-weight-normal">Languages</p>
+                <p>Python</p>
+                <p class="list-title has-text-primary has-text-weight-normal">Tools and Frameworks</p>
+                <ul>
+                  <li>Django/DRF</li>
+                  <li>GraphQL/Graphene</li>
+                  <li>PostgreSQL</li>
+                  <li>Elasticsearch</li>
+                  <li>Redis</li>
+                  <li>Pytest</li>
+                  <li>Heroku</li>
+                  <li>Gitlab CI/CD</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="section clients is-medium is-white has-text-centered">
+      <div class="container is-narrow">
+        <div class="columns is-centered">
+          <div class="column is-half">
+            <h1 class="title is-size-3-desktop is-size-4-tablet is-size-5-mobile">Places I've Worked</h1>
+          </div>
+        </div>
+        <div class="client-grid">
+          <div class="columns is-mobile is-multiline is-vcentered">
+            <div class="column is-half-mobile is-one-quarter-tablet">
+              <figure class="image is-2x1"><img class="client-logo" src="assets/lyft.svg"></figure>
+            </div>
+            <div class="column is-half-mobile is-one-quarter-tablet" style="position: relative; left: -2rem;">
+              <figure class="image is-2x1"><img class="client-logo" src="assets/zipcar.svg"></figure>
+            </div>
+            <div class="column is-half-mobile is-one-quarter-tablet">
+              <figure class="image is-2x1"><img class="client-logo" src="assets/zillow.svg"></figure>
+            </div>
+            <div class="column is-half-mobile is-one-quarter-tablet" style="position: relative; left: -1.5rem;">
+              <figure class="image is-2x1"><img class="client-logo" src="assets/hubspot.svg"></figure>
+            </div>
+        </div>
+      </div>
+    </section>
+    <!--
+    <section class="section is-medium has-background-primary has-text-centered is-long-ish">
+      <div class="container">
+        <div class="columns is-centered">
+          <div class="column is-three-fifths">
+            <h1 class="title is-spaced is-size-3-desktop is-size-4-mobile has-text-white">My Startup Projects</h1>
+            <h2 class="subtitle is-size-5-desktop has-text-white">I'm a bit of a digital product junky. Over the years, I've used hundreds of web and mobile apps in different industries and verticals. Eventually, I decided that it would be a fun challenge to try designing and building my own.</h2>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="section startups has-text-centered projects">
+      <div class="container is-narrow">
+        <div class="startup-grid">
+          <div class="columns is-multiline level">
+            <div class="column is-12-mobile is-half-tablet is-half-desktop level-item">
+              <div class="box"><img class="logo" src="assets/t.png" style="width: 50%; margin: 1.5rem;">
+                <p>Next level plug and play chassis systems for custom do-it-yourself lightsaber builds.</p>
+              </div>
+            </div>
+            <div class="column is-12-mobile is-half-tablet is-half-desktop level-item">
+              <div class="box"><img class="logo" src="assets/t.png" style="width: 50%; margin: 1.5rem;">
+                <p>Simple feedback and engagement tools for teams that want to build and ship winning products.</p>
+              </div>
+            </div>
+            <div class="column is-12-mobile is-half-tablet is-half-desktop level-item">
+              <div class="box"><img class="logo" src="assets/t.png" style="width: 50%; margin: 1.5rem;">
+                <p>A powerful, easy-to-configure form backend for designers and developers. No coding required.</p>
+              </div>
+            </div>
+            <div class="column is-12-mobile is-half-tablet is-half-desktop level-item">
+              <div class="box"><img class="logo" src="assets/t.png" style="width: 50%; margin: 1.5rem;">
+                <p>Beautifully simple websites for independent distributors of Young Living Essential Oils.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="callout">
+          <div class="columns is-centered">
+            <div class="column">
+              <h1 class="title is-spaced">Interested in collaborating?</h1>
+              <h2 class="subtitle is-size-5-desktop">I’m always open to discussing new projects or adding new people to current ones.</h2>
+              <a class="button is-primary is-outlined is-medium" href="#">Start a conversation</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    -->
+    <footer class="section has-background-primary is-small has-text-centered" id="contact">
+      <div class="container is-narrow">
+        <div class="columns is-centered"> 
+          <div class="column is-one-half mb-0">
+            <h3 class="is-size-4-touch has-text-white" style="font-weight: 900;">Message me on Linkedin or send me an email.</h3>
+          </div>
+        </div>
+        <div class="social-icons mb-4">
+          <p class="field">
+            <a class="button is-medium" href="https://www.linkedin.com/in/christiandhatch" target="_blank">
+              <span class="icon is-small">
+                <i class="fab fa-linkedin-in fa-fw"></i> 
+              </span>
+            </a>
+            <!--
+            <a class="button is-medium" href="https://www.linkedin.com/in/christiandhatch" target="_blank">
+              <span class="icon is-small">
+                <i class="fab fa-github"></i>
+              </span>
+            </a>
+            -->
+            <a class="button is-medium" href="mailto:christiandhatch@gmail.com" target="_blank">
+              <span class="icon is-small">
+                <svg class="svg-inline--fa fa-envelope fa-w-16 fa-fw" aria-hidden="true" focusable="false" data-prefix="far" data-icon="envelope" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" data-fa-i2svg=""><path fill="currentColor" d="M464 64H48C21.49 64 0 85.49 0 112v288c0 26.51 21.49 48 48 48h416c26.51 0 48-21.49 48-48V112c0-26.51-21.49-48-48-48zm0 48v40.805c-22.422 18.259-58.168 46.651-134.587 106.49-16.841 13.247-50.201 45.072-73.413 44.701-23.208.375-56.579-31.459-73.413-44.701C106.18 199.465 70.425 171.067 48 152.805V112h416zM48 400V214.398c22.914 18.251 55.409 43.862 104.938 82.646 21.857 17.205 60.134 55.186 103.062 54.955 42.717.231 80.509-37.199 103.053-54.947 49.528-38.783 82.032-64.401 104.947-82.653V400H48z"></path></svg><!-- <i class="far fa-envelope fa-fw"></i> Font Awesome fontawesome.com --></span></a></p>
+      </div>
+        <div class="copyright has-text-white" style="opacity: 0.9;">Coded by yours truly</div>
+        <div class="made-by-bulma"><a href="https://bulma.io/"><img src="assets/made-with-bulma.png" alt="Made with Bulma" width="163" height="31"></a></div>
+      </div>
+    </footer>
+  </body>
 </html>
